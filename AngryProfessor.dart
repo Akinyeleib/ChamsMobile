@@ -23,10 +23,7 @@ void checkPunctual(String a, String b) {
       early++;
     }
   }
-
-  if (early >= K) {
-    print("NO");
-  } else
-    print("YES");
+  
+  print(early >= K ? 'NO': 'YES');
 
 }
