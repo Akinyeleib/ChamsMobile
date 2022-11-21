@@ -14,9 +14,7 @@ void checkPunctual(String a, String b) {
     return;
   }
 
-  List<String> time = b.split(' ');
-
-  time.forEach((t) {
+  b.split(' ').forEach((t) {
     int num = int.parse(t);
     if (num <= 0) early++;
   });
