@@ -4,8 +4,7 @@ void main(List<String> args) {
 }
 
 void checkPunctual(String a, String b) {
-  
-  List <String> nums = a.split(' ');
+  List<String> nums = a.split(' ');
   int N = int.parse(nums[0]);
   int K = int.parse(nums[1]);
   int early = 0;
@@ -15,14 +14,12 @@ void checkPunctual(String a, String b) {
     return;
   }
 
-  List <String> time = b.split(' ');
+  List<String> time = b.split(' ');
 
-  for (String t in time) {
+  time.forEach((t) {
     int num = int.parse(t);
-    if (num <= 0)
-      early++;
-  }
-  
-  print(early >= K ? 'NO': 'YES');
+    if (num <= 0) early++;
+  });
 
+  print(early >= K ? 'NO' : 'YES');
 }
