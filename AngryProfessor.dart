@@ -19,9 +19,8 @@ void checkPunctual(String a, String b) {
 
   for (String t in time) {
     int num = int.parse(t);
-    if (num <= 0) {
+    if (num <= 0)
       early++;
-    }
   }
   
   print(early >= K ? 'NO': 'YES');
